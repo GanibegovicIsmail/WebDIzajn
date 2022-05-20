@@ -232,6 +232,8 @@
     position: absolute;
     text-align: center;
     color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
 }
 .container2 p{
     position: absolute;
@@ -240,6 +242,7 @@
     width: 500px;
     text-align: justify;
     left: 10%;
+    
 }
 
 .container2 h2{
@@ -272,3 +275,55 @@
     position: relative;
     text-align: center;
 }
+@media only screen and (max-width: 1000px) {
+   .gmapa{
+    display: none;
+   }
+   .container2 {
+    background: linear-gradient(90deg, rgb(10, 26, 46) 50%, rgb(24, 15, 37) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 p{
+    left: 15%;
+
+}
+.container2 h2{
+    left: 15%;
+
+}
+   .container2 img{
+       display: none;
+   }
+  
+  }
+  
+  /*--------------------------------proizvodi---------------------- */
+
+  .row{
+      display: flex;
+      justify-content: space-between;
+        padding: 50px 50px 0px 50px;
+  }
+
+  .row img{
+      width: 270px;
+      height: 220px;
+  }
+
+  .card-body{
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      width: 270px;
+      padding: 5px;
+  }
+
+  .card img{
+      border-radius: 10px;
+      overflow: hidden;
+  }
+  .btn{
+      padding: 5px 10px;
+  }
