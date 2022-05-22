@@ -61,6 +61,10 @@
 .navbar__item {
     height: 80px;
 }
+.col-form-label :hover{
+    color: #ff4800;
+
+}
 
 .navbar__links {
     color: #fff;
@@ -258,6 +262,10 @@ background-color: #fca445;
      color: #ffffff;
      background-color: #ff4800;
  }
+ .card button:hover{
+    color: #ffffff;
+    background-color: #292929;
+}
 
 
 

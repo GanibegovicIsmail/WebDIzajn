@@ -35,8 +35,8 @@ const renderFoods = (foods) => {
             <div class="card-body">
                 <h5 class="card-title">${food.name}</h5>
                 <p class="card-text">${food.price}KM</p>
-                <button type="button" class="btn btn-primary" onclick="fillEditData(${food.id})" data-bs-toggle="modal" data-bs-target="#edit-food" data-bs-whatever="@getbootstrap">Edit</button>
-                <button type="button" class="btn btn-primary" onclick="deleteFood(${food.id})"  data-bs-whatever="@getbootstrap">Delete</button>
+                <button type="button" class="btn " onclick="fillEditData(${food.id})" data-bs-toggle="modal" data-bs-target="#edit-food" data-bs-whatever="@getbootstrap">Edit</button>
+                <button type="button" class="btn " onclick="deleteFood(${food.id})"  data-bs-whatever="@getbootstrap">Delete</button>
             </div>
         </div>`;
     });
@@ -101,8 +101,8 @@ const deleteFood = (foodId) => {
         <div class="card-body">
             <h5 class="card-title">${food.name}</h5>
             <p class="card-text">${food.price}KM</p>
-            <button type="button" class="btn btn-primary" onclick="fillEditData(${food.id})" data-bs-toggle="modal" data-bs-target="#edit-food" data-bs-whatever="@getbootstrap">Edit</button>
-            <button type="button" class="btn btn-primary" onclick="deleteFood(${food.id})" data-bs-whatever="@getbootstrap">Delete</button>
+            <button type="button" class="btn " onclick="fillEditData(${food.id})" data-bs-toggle="modal" data-bs-target="#edit-food" data-bs-whatever="@getbootstrap">Edit</button>
+            <button type="button" class="btn " onclick="deleteFood(${food.id})" data-bs-whatever="@getbootstrap">Delete</button>
         </div>
     </div>`
     });
