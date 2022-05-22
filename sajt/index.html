@@ -51,6 +51,43 @@
 </div>
 
 
+
+<div class="modal fade" id="add-food" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Food</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!--<div class="mb-3">
+              <label for="add-food-id" class="col-form-label">Id:</label>
+              <input type="text" class="form-control" id="add-food-id" disabled>
+            </div>-->
+          <div class="mb-3">
+            <label for="add-food-name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="add-food-name">
+          </div>
+          <div class="mb-3">
+            <label for="add-food-image" class="col-form-label">Image:</label>
+            <input type="text" class="form-control" id="add-food-image">
+          </div>
+          <div class="mb-3">
+              <label for="add-food-price" class="col-form-label">Price:</label>
+              <input type="number" class="form-control" id="add-food-price">
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"  onclick="addFood()">Potvrdi</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 <!------------------------------Navbar----------------------------->
 <nav class="navbar" >
     <div class="navbar__container"  >
@@ -71,7 +108,8 @@
                 <a href="#services" class="navbar__links" id="services-page">Proizvodi</a>    
             </li>
             <li class="navbar__btn">
-                <a href="#sign-up" class="button" id="signup">Prijavi se</a>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#add-food" data-bs-whatever="@getbootstrap">Add food</button>
+                <!--<a href="#sign-up" class="button" id="addbtn">Dodaj buton</a>-->
             </li>
         </ul>
     </div>

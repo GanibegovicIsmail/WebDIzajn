@@ -84,7 +84,7 @@ const editFood = () => {
         }
     })
 }
-s
+
 const deleteFood = (foodId) => {
     fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/api/Food/${foodId}`, {
         method: 'DELETE'
@@ -108,6 +108,42 @@ const deleteFood = (foodId) => {
     });
 
     foodsRow.innerHTML = resultFoodsHtml;
+}
+const addbtn = document.getElementById("addbtn")
+const addFood = ()=>{
+
+    const addfoodName = document.getElementById("add-food-name")
+    const addfoodImage = document.getElementById("add-food-image")
+    const addfoodPrice = document.getElementById("add-food-price")
+    let id = Math.round(Math.random()*1000)
+    foods.push({ 
+        id:id,
+        name:addfoodName.value,
+        imageUrl:addfoodImage.value,
+        price:addfoodPrice.value
+    })
+
+    const foodsRow = document.getElementById('foods-row');
+
+    let resultFoodsHtml = '';
+
+    foods.forEach(food => {
+        resultFoodsHtml += `
+        <div class="card " id="${food.id}">
+            <img src="${food.imageUrl}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${food.name}</h5>
+                <p class="card-text">${food.price}KM</p>
+                <button type="button" class="btn btn-primary" onclick="fillEditData(${food.id})" data-bs-toggle="modal" data-bs-target="#edit-food" data-bs-whatever="@getbootstrap">Edit</button>
+                <button type="button" class="btn btn-primary" onclick="deleteFood(${food.id})"  data-bs-whatever="@getbootstrap">Delete</button>
+            </div>
+        </div>`;
+    });
+
+    foodsRow.innerHTML = resultFoodsHtml;
+    addfoodName.value = ""
+    addfoodImage.value =""
+    addfoodPrice.value =""
 }
 
 

@@ -75,9 +75,20 @@
 .navbar__btn {
     display: flex;
     justify-content: center;
-    padding: 0 1rem;
     width: 100%;
+   
 }
+.navbar__btn button:hover{
+    color: white;
+    background-color: #dc6e42;
+
+}
+.navbar__btn button{
+color: white;
+border-radius: 5px;
+background-color: #fca445;
+}
+
 .button  {
     display: flex;
     justify-content: center;
