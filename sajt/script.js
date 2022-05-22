@@ -86,6 +86,10 @@ const editFood = () => {
 }
 
 const deleteFood = (foodId) => {
+    fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/api/Food/${foodId}`, {
+        method: 'DELETE'
+    })
+    .then(res => console.log(res))
     foods = foods.filter((el) => el.id !== foodId)
     const foodsRow = document.getElementById('foods-row');
     let resultFoodsHtml = '';
