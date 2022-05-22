@@ -4,8 +4,8 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-
 }
+
 
 /***************************** Navbar****************************/
 .logo1:hover{
@@ -103,13 +103,250 @@
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width:950px){
+
+/********************************* Home page ********************************/
+
+.acontainer{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    background-image: url('slike/background.png');
+    overflow:hidden ;
+    background: fill;
+    height: 900px;
+    text-align: center;
+    border-bottom: 0px;
+ 
+}
+.centar{
+    text-align: end;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+#hangri{
+    display: flex;
+    align-items: center;
+    color: #fca445;
+    font-size: 70px;
+}
+
+#zajos{
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 70px;
+}
+
+/****************** About page *******************/
+
+.container2 {
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+
+.container2 p{
+    position: absolute;
+    cursor: pointer;
+    top: 25%;
+    width: 500px;
+    text-align: justify;
+    left: 10%;
+    
+}
+
+.container2 h2{
+    text-size-adjust: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    width: 500px;
+    text-align: justify;
+    left: 10%;
+}
+.gmapa{
+    margin-left: 950px;
+    margin-bottom: 100px;
+}
+
+.container3 {
+    background: url('slike/wood.png');
+    width: 100%;
+    margin-top: 950px;
+    height: 500px;
+    position: absolute;
+
+}
+
+.frame:hover{
+    opacity: 70%;
+}
+
+.text3{
+    font-family: 'Grape Nuts', cursive;
+    margin-top: 20px;
+    font-size: 50px;
+    color: #fca445;
+    position: relative;
+    text-align: center;
+}
+  
+  /********************************* Proizvodi *****************************/
+
+  .row{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  .row img{
+      width: 270px;
+      height: 200px;
+  }
+
+  .card-body{
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      width: 270px;
+      padding: 5px;
+  }
+
+  .card img{
+    border-radius: 10%;
+      overflow: hidden;
+  }
+  
+  .btn{
+      padding: 5px 10px;
+  }
+
+ .card{
+     display: block;
+     width: 16%;
+     opacity: 100%;
+     background: none ;
+     padding: 0;
+     margin-left: 30px;
+     margin-right: 30px;
+ }
+
+ .card button{
+     color: #ffffff;
+     background-color: #ff4800;
+ }
+
+
+
+ /*************************** Media ****************************/
+
+ @media only screen and (max-width: 720px) {
+    
+.container3{
+    background: none; 
+}
+     
+.centar{
+     text-align: center;
+ }
+
+.row{
+    flex-direction: column;
+    padding-right: 820px;
+}
+.container2 {
+    background: linear-gradient(90deg, rgb(10, 26, 46) 50%, rgb(24, 15, 37) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .container2 p{
+     left: 15%;
+}
+
+ .container2 h2{
+     left: 15%;
+}
+
+.container2 img{
+    display: none;
+}
+  
+   }
+
+
+   /*************960**********/
+
+   @media screen and (max-width:960px){
+    .container3{
+        background: none; 
+    }
+
+    .centar{
+        text-align: center;
+    }
+
+     .row{
+         flex-direction: column;
+     }
+  
+}
+
+/*****************1670***********/
+
+@media screen and (max-width:1670px){
+    .centar{
+        text-align: center;
+    }
+     .row{
+        padding-right: 270px;
+         align-items: center;
+         flex-direction: column;
+         padding-left: 200px;
+     }
+}
+
+/*****************1280***********/
+
+@media screen and (max-width:1280px){
+
+    .row{
+        padding-right: 350px;
+        background: none;
+    }
+}
+
+/*****************960***********/
+
+@media screen and (max-width:960px){
+    .container3{
+        background: none; 
+    }
+
     .logo1{
         opacity: 0%;
+    }
+    .row{
+        padding-right: 420px;
     }
 }
 
 @media screen and (max-width: 960px) {
+
+    .container3{
+        background: none; 
+    }
+
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -193,171 +430,3 @@
         transform: translateY(-8px) rotate(-45deg);
      }*/
 }
-
-/********************************* Home page ********************************/
-
-.acontainer{
-    margin: auto;
-    padding: auto;
-    width: 100%;
-    background-image: url('slike/background.png');
-    overflow:hidden ;
-    background: fill;
-    height: 900px;
-    text-align: center;
-    border-bottom: 0px;
- 
-}
-.centar{
-    text-align: end;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    font-family: 'Permanent Marker', cursive;
-}
-#hangri{
-    display: flex;
-    align-items: center;
-    color: #fca445;
-}
-
-#zajos{
-    margin-top: -20px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
-
-/****************** About page *******************/
-
-.container2 {
-    position: absolute;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    height: 100%;
-    width: 100%;
-}
-
-.container2 p{
-    position: absolute;
-    cursor: pointer;
-    top: 25%;
-    width: 500px;
-    text-align: justify;
-    left: 10%;
-    
-}
-
-.container2 h2{
-    text-size-adjust: 20px;
-    position: absolute;
-    cursor: pointer;
-    top: 20%;
-    width: 500px;
-    text-align: justify;
-    left: 10%;
-}
-.gmapa{
-    margin-left: 950px;
-    margin-bottom: 100px;
-}
-
-.container3 {
-    background-image: url('slike/wood.png');
-    width: 100%;
-    margin-top: 950px;
-    height: 500px;
-    position: absolute;
-}
-
-.frame:hover{
-    opacity: 70%;
-}
-
-.text3{
-    font-family: 'Grape Nuts', cursive;
-    margin-top: 20px;
-    font-size: 50px;
-    color: #fca445;
-    position: relative;
-    text-align: center;
-}
-  
-  /********************************* Proizvodi *****************************/
-
-  .row{
-      display: flex;
-      justify-content: space-between;
-        padding: 50px 50px 0px 50px;
-  }
-
-  .row img{
-      width: 270px;
-      height: 200px;
-  }
-
-  .card-body{
-      text-align: center;
-      font-size: 20px;
-      color: white;
-      width: 270px;
-      padding: 5px;
-  }
-
-  .card img{
-    border-radius: 10%;
-      overflow: hidden;
-  }
-  
-  .btn{
-      padding: 5px 10px;
-  }
-
- .card{
-     display: block;
-     width: 16%;
-     opacity: 100%;
-     background: none ;
-     padding: 0;
-     margin-left: 30px;
-     margin-right: 30px;
- }
-
- .card button{
-     color: #ffffff;
-     background-color: #ff4800;
- }
-
-
-
- /*************************** Media ****************************/
-
- @media only screen and (max-width: 720px) {
-    
-.gmapa {
-   display: none;
-}
-
-.container2 {
-    background: linear-gradient(90deg, rgb(10, 26, 46) 50%, rgb(24, 15, 37) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
- .container2 p{
-     left: 15%;
-}
-
- .container2 h2{
-     left: 15%;
-}
-
-.container2 img{
-    display: none;
-}
-   
-   }
-
