@@ -13,41 +13,41 @@
 </head>
 <body>
 
-    <div class="modal fade" id="edit-food" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="modal fade" id="edit-food" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+                <label for="food-id" class="col-form-label">Id:</label>
+                <input type="text" class="form-control" id="food-id" disabled>
+              </div>
+            <div class="mb-3">
+              <label for="food-name" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="food-name">
             </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                    <label for="food-id" class="col-form-label">Id:</label>
-                    <input type="text" class="form-control" id="food-id" disabled>
-                  </div>
-                <div class="mb-3">
-                  <label for="food-name" class="col-form-label">Name:</label>
-                  <input type="text" class="form-control" id="food-name">
-                </div>
-                <div class="mb-3">
-                  <label for="food-image" class="col-form-label">Image:</label>
-                  <input type="text" class="form-control" id="food-image">
-                </div>
-                <div class="mb-3">
-                    <label for="food-price" class="col-form-label">Price:</label>
-                    <input type="number" class="form-control" id="food-price">
-                  </div>
-              </form>
+            <div class="mb-3">
+              <label for="food-image" class="col-form-label">Image:</label>
+              <input type="text" class="form-control" id="food-image">
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onclick="editFood()">Send message</button>
-            </div>
-          </div>
+            <div class="mb-3">
+                <label for="food-price" class="col-form-label">Price:</label>
+                <input type="number" class="form-control" id="food-price">
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="editFood()">Send message</button>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
 <!------------------------------Navbar----------------------------->
 <nav class="navbar" >
@@ -86,11 +86,11 @@
 
         <h2 class="mi">O NAMA</h2>
 
-        <p class="okvir">Sve je počelo 2014. godine sa našom prvom poslovnicom, skromnom kiosku u zeničkoj ulici Sarajevska. 
+        <p class="frame">Sve je počelo 2014. godine sa našom prvom poslovnicom, skromnom kiosku u zeničkoj ulici Sarajevska. 
             Naš, tada mali fast food sa vrijednim timom od samo 2 uposlenika, postao je vrlo brzo prepoznatljiv u cijelom gradu, naročito 
             po omjeru cijene i kvaliteta naših proizvoda. Za samo godinu dana postali smo jedan od zeničkih lidera u dostavi hrane. Naš
             popularnost je rasla do to mjere da se naše ime i brend počeo zloupotrebljavati od strane konkurenata, što je bio motiv da 
-            registrujemo i zaštitimo naš brend kod zavoda za intelektualno vlasništvo BiH.Kraj 2020. i početak 2021. 
+            registrujemo i zaštitimo naš brend kod zavoda za intelektualno vlasništvo BiH. Kraj 2020. i početak 2021. 
             godine predstavlja prekretnicu u našem poslovanju. U decembru otvaramo našu prvu mesnicu u kojoj nudimo svježe i isključivo domaće
             meso i mesne prerađevine koji zadovoljavaju najviše tehnološke i higijenske standarde.U januaru 2021. otvaramo naš prvi moderni restoran 
             urbanog tipa. Uvodimo mnoštvo novih jela, aktiviramo koncept call centra za što bolju komunikaciju sa kupcima po pitanju dostave hrane i 
@@ -98,7 +98,7 @@
             Čengić Vila gdje postajemo za veoma kratak period prepoznatljivi. Krajem 5. mjeseca 2022. godine otvaramo našu drugu franšizu, ovaj put u Tuzli u Tržnom Centru Sjenjak gdje nas domaći kupcu čekaju otvorenih
             ruku i sa zadovoljstvom jer Tuzla zna prepoznati kvalitet.
         </p>
-        <div class="gmapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2405.3000642197353!2d17.902472275627616!3d44.19882848077557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ee2423fa0fbaf%3A0x5d1b6950986ead4b!2sFakultetska%201%2C%20Zenica%2072000!5e0!3m2!1sen!2sba!4v1653033548813!5m2!1sen!2sba" width="550" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <p class="gmapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2405.3000642197353!2d17.902472275627616!3d44.19882848077557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ee2423fa0fbaf%3A0x5d1b6950986ead4b!2sFakultetska%201%2C%20Zenica%2072000!5e0!3m2!1sen!2sba!4v1653033548813!5m2!1sen!2sba" width="550" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
     </div>
 
     <!--------------------------Proizvodi----------------------------------->
@@ -114,6 +114,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div> -->
+        
     </div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
