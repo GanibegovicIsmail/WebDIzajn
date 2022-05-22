@@ -11,6 +11,7 @@
 .logo1:hover{
     color: #fca445;
     cursor: pointer;
+    background: none;
 }
 
 .navbar {
@@ -150,6 +151,7 @@
     color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
+    background: none;
 }
 
 .container2 p{
@@ -177,11 +179,12 @@
 }
 
 .container3 {
-    background: url('slike/wood.png');
     width: 100%;
     margin-top: 950px;
     height: 500px;
     position: absolute;
+    background: linear-gradient(90deg, rgb(10, 26, 46) 50%, rgb(24, 15, 37) 100%);
+
 
 }
 
@@ -250,11 +253,19 @@
  /*************************** Media ****************************/
 
  @media only screen and (max-width: 720px) {
-    
-.container3{
-    background: none; 
-}
      
+    body{
+        background: linear-gradient(90deg, rgb(10, 26, 46) 50%, rgb(24, 15, 37) 100%);
+    }
+    .navbar{
+        background: none;
+    }
+     .navbar__links{
+         background: none;
+     }
+
+
+
 .centar{
      text-align: center;
  }
@@ -288,6 +299,11 @@
    /*************960**********/
 
    @media screen and (max-width:960px){
+
+    body{
+        background: linear-gradient(90deg, rgb(10, 26, 46) 50%, rgb(24, 15, 37) 100%);
+    }
+
     .container3{
         background: none; 
     }
@@ -305,6 +321,11 @@
 /*****************1670***********/
 
 @media screen and (max-width:1670px){
+
+body{
+    background: linear-gradient(90deg, rgb(10, 26, 46) 50%, rgb(24, 15, 37) 100%);
+}
+
     .centar{
         text-align: center;
     }
@@ -314,11 +335,18 @@
          flex-direction: column;
          padding-left: 200px;
      }
+    
 }
 
 /*****************1280***********/
 
+
+
 @media screen and (max-width:1280px){
+
+    body{
+        background: linear-gradient(90deg, rgb(10, 26, 46) 50%, rgb(24, 15, 37) 100%);
+    }
 
     .row{
         padding-right: 350px;
@@ -329,8 +357,9 @@
 /*****************960***********/
 
 @media screen and (max-width:960px){
-    .container3{
-        background: none; 
+
+    body{
+        background: linear-gradient(90deg, rgb(10, 26, 46) 50%, rgb(24, 15, 37) 100%);
     }
 
     .logo1{
@@ -338,13 +367,6 @@
     }
     .row{
         padding-right: 420px;
-    }
-}
-
-@media screen and (max-width: 960px) {
-
-    .container3{
-        background: none; 
     }
 
     .navbar__container{

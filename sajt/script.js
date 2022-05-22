@@ -84,7 +84,7 @@ const editFood = () => {
         }
     })
 }
-
+s
 const deleteFood = (foodId) => {
     fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/api/Food/${foodId}`, {
         method: 'DELETE'
