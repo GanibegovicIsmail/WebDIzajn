@@ -2,13 +2,15 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
-//mobitel
+//Mobitel
 const mobileMenu = () => {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 }
 menu.addEventListener('click', mobileMenu);
 
+
+//Put
 const BASE_URL = 'https://ptf-web-dizajn-2022.azurewebsites.net/';
 
 let foods = [];
@@ -81,4 +83,6 @@ const editFood = () => {
         }
     })
 }
+
+
 
